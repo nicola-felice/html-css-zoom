@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
 }
 
 /* ________ GLOBAL COLORS ________ */
 :root {
     --main_dark_grey_bg: #1a1a1a;
+    --main_green:#23d959;
 }
 /* ________ END GLOBAL COLORS ________ */
 
@@ -35,6 +36,10 @@ button {
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
 }
+
+#color_green{
+    color: var(--main_green);
+}
 /* ________ END COMMON STYLES ________ */
 
 
@@ -58,7 +63,7 @@ header {
     padding: .25rem;
     border-radius: .25rem;
     font-size: .75rem;
-    color: rgb(0, 255, 0);
+    color: var(--main_green);
 }
 
 .recording_btn * {
@@ -84,20 +89,75 @@ header {
 /* ________ MAIN ________ */
 main {
     height: calc(100vh - 2.5rem - 3rem);
+    padding: 0 .15rem;
     background-color: var(--main_dark_grey_bg);
 }
+
+.arrow_switch {
+    text-align: center;
+    font-size: .7rem;
+    color: rgba(255, 255, 255, 0.829);
+    padding: .35rem 1rem .25rem 1rem;
+    border-radius: .25rem;
+    border: 2px black solid;
+    background: linear-gradient(rgb(58, 58, 58), black);
+    cursor: pointer;
+}
+.arrow_switch i {
+    font-size: 3rem;
+    color: rgb(0, 132, 255);
+}
+
+/* ------ PARTICIPANTS SECTION ------ */
+.participants_section {
+    align-self: stretch;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 85%;
+}
+
+.participant {
+    position: relative;
+    width: 20%;
+    height: 20%;
+    padding: .25rem;
+}
+
+.participant img {
+    border-radius: .4rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name_participant {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+
+    font-size: .8rem;
+    color: white;
+    border-radius: .35rem;
+    padding: .1rem .2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.name_participant i {
+    color: #ff5c5c;
+}
+/* ------ END PARTICIPANTS SECTION ------ */
+
 /* ________ END MAIN ________ */
 
 
 
 /* ________ FOOTER ________ */
-footer{
+footer {
     height: 3rem;
     background-color: #242628;
     padding: 0 1rem;
 }
 
-.function_btn{
+.function_btn {
     color: #aaabac;
     text-align: center;
     padding: .35rem 1rem;
@@ -107,10 +167,10 @@ footer{
     position: relative;
     cursor: pointer;
 }
-.function_btn i{
+.function_btn i {
     font-size: 1.1rem;
 }
-.more_options_arrow::after{
+.more_options_arrow::after {
     content: '\f106';
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -121,7 +181,7 @@ footer{
     right: 5%;
 }
 
-.left_room_btn{
+.left_room_btn {
     background-color: red;
     padding-left: 1.65rem;
     padding-right: 1.65rem;
