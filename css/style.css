@@ -161,7 +161,7 @@ footer {
 .function_btn {
     color: #aaabac;
     text-align: center;
-    padding: .35rem 1rem;
+    padding: .35rem 1.25rem;
     font-size: .8rem;
     text-transform: capitalize;
     
@@ -175,11 +175,17 @@ footer {
     content: '\f106';
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    font-size: 1.1rem;
+    font-size: .9rem;
 
     position: absolute;
     top: 5%;
-    right: 5%;
+    right: 3%;
+}
+.number_of_participants{
+    position: absolute;
+    font-size: .7rem;
+    top: 5%;
+    right: 15%;
 }
 
 .left_room_btn {
