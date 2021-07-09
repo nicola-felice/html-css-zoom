@@ -37,7 +37,7 @@ button {
     cursor: pointer;
 }
 
-#color_green{
+#color_green {
     color: var(--main_green);
 }
 /* ________ END COMMON STYLES ________ */
@@ -105,7 +105,7 @@ main {
 }
 .arrow_switch i {
     font-size: 3rem;
-    color: rgb(0, 132, 255);
+    color: #2dbaff;
 }
 
 /* ------ PARTICIPANTS SECTION ------ */
@@ -161,13 +161,17 @@ footer {
 .function_btn {
     color: #aaabac;
     text-align: center;
-    padding: .35rem 1.25rem;
+    padding: .35rem 1rem;
     font-size: .8rem;
     text-transform: capitalize;
     
     position: relative;
     cursor: pointer;
 }
+.function_btn:hover {
+    background-color: #2f3235;
+}
+
 .function_btn i {
     font-size: 1.1rem;
 }
@@ -179,9 +183,9 @@ footer {
 
     position: absolute;
     top: 5%;
-    right: 3%;
+    right: 2%;
 }
-.number_of_participants{
+.number_of_participants {
     position: absolute;
     font-size: .7rem;
     top: 5%;
@@ -189,7 +193,7 @@ footer {
 }
 
 .left_room_btn {
-    background-color: red;
+    background-color: #e02828;
     padding-left: 1.65rem;
     padding-right: 1.65rem;
     font-weight: 600;
