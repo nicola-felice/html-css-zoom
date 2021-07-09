@@ -114,6 +114,7 @@ main {
     align-content: flex-start;
     flex-wrap: wrap;
     width: 85%;
+    max-width: 1400px;
 }
 
 .participant {
