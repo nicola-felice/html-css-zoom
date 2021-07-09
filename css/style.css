@@ -93,14 +93,14 @@ main {
 /* ________ FOOTER ________ */
 footer{
     height: 3rem;
-    background-color: var(--main_dark_grey_bg);
+    background-color: #242628;
     padding: 0 1rem;
 }
 
 .function_btn{
     color: #aaabac;
     text-align: center;
-    padding: .25rem 1rem;
+    padding: .35rem 1rem;
     font-size: .8rem;
     text-transform: capitalize;
     
