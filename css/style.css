@@ -1,5 +1,85 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ________ GLOBAL COLORS ________ */
+:root {
+    --main_dark_grey_bg: #1a1a1a;
+}
+/* ________ END GLOBAL COLORS ________ */
+
+
+
+/* ________ COMMON STYLES ________ */
+.flex {
+    display: flex;
+}
+.align_center {
+    align-items: center;
+}
+
+button {
+    padding: .45rem .75rem;
+    color: white;
+    border: transparent;
+    border-radius: .25rem;
+    font-family: 'Open Sans', sans-serif;
+}
+/* ________ END COMMON STYLES ________ */
+
+
+
+/* ________ HEADER ________ */
+.view_btn,
+.recording_btn,
+.shield_icon_header {
+    margin: 0 .25rem;
+    background-color: #101010;
+}
+
+header {
+    height: 2.5rem;
+    padding: 0 .25rem;
+    background-color: var(--main_dark_grey_bg);
+    color: white;
+}
+
+.shield_icon_header {
+    padding: .25rem;
+    border-radius: .25rem;
+    font-size: .75rem;
+    color: rgb(0, 255, 0);
+}
+
+.recording_btn * {
+    vertical-align: middle;
+}
+.recording_icon {
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: tomato;
+}
+
+header .view_btn {
+    margin-left: auto;
+    background-color: #212122;
+    border-radius: .55rem;
+}
+/* ________ END HEADER ________ */
+
+
+
+/* ________ MAIN ________ */
+main {
+    height: calc(100vh - 2.5rem);
+    background-color: var(--main_dark_grey_bg);
+}
+/* ________ END MAIN ________ */
