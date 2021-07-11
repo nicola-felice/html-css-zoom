@@ -30,11 +30,11 @@ body {
 
 button {
     padding: .45rem .75rem;
-    color: white;
     border: transparent;
     border-radius: .25rem;
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
+    color: white;
 }
 
 #color_green {
@@ -46,7 +46,7 @@ button {
 
 /* ________ HEADER ________ */
 .view_btn,
-.recording_btn,
+.recording_alert,
 .shield_icon_header {
     margin: 0 .25rem;
     background-color: #101010;
@@ -66,7 +66,11 @@ header {
     color: var(--main_green);
 }
 
-.recording_btn * {
+.recording_alert {
+    padding: .3rem .75rem;
+    border-radius: .25rem;
+}
+.recording_alert * {
     vertical-align: middle;
 }
 .recording_icon {
