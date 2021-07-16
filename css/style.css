@@ -119,6 +119,8 @@ main {
     flex-wrap: wrap;
     width: 85%;
     max-width: 1400px;
+
+    overflow: hidden;
 }
 
 .participant {
@@ -127,6 +129,48 @@ main {
     height: 20%;
     padding: .25rem;
 }
+/* HORIZONTAL QUERIES */
+@media screen and (max-width: 1040px) {
+    .participant {
+        width: calc(100% / 4);
+    } 
+}
+@media screen and (max-width: 750px) {
+    .participant {
+        width: calc(100% / 3);
+    } 
+}
+@media screen and (max-width: 550px) {
+    .participant {
+        width: calc(100% / 2);
+    } 
+}
+@media screen and (max-width: 400px) {
+    .participant {
+        width: 100%;
+    } 
+}
+/* END HORIZONTAL QUERIES */
+
+
+/* VERTICAL QUERIES */
+@media screen and (max-height: 600px) {
+    .participant {
+        height: calc(100% / 4);
+    } 
+}
+@media screen and (max-height: 480px) {
+    .participant {
+        height: calc(100% / 3);
+    } 
+}
+@media screen and (max-height: 400px) {
+    .participant {
+        height: calc(100% / 2);
+    } 
+}
+/* END VERTICAL QUERIES */
+
 
 .participant img {
     border-radius: .4rem;
@@ -175,7 +219,6 @@ footer {
 .function_btn:hover {
     background-color: #2f3235;
 }
-
 .function_btn i {
     font-size: 1.1rem;
 }
@@ -189,6 +232,17 @@ footer {
     top: 5%;
     right: 2%;
 }
+
+
+/* ------- CENTER COLUMN FOOTER ------- */
+.medium_mobile_other_options {
+    display: none;
+}
+.small_mobile_other_options {
+    display: none;
+}
+
+/* number of participants */
 .number_of_participants {
     position: absolute;
     font-size: .7rem;
@@ -196,10 +250,45 @@ footer {
     right: 15%;
 }
 
+@media screen and (max-width: 950px) {
+    .medium_mobile_other_options {
+        display: block;
+        order: -1;
+    }
+    .other_functions {
+        display: none;
+    }
+}
+@media screen and (max-width: 430px) {
+    .medium_mobile_other_options {
+        display: none;
+    }
+
+    .small_mobile_other_options {
+        display: block;
+        order: -1;
+    }
+
+    .function_btn {
+        padding: .35rem .5rem;
+    }
+}
+/* ------- END CENTER COLUMN FOOTER ------- */
+
+
+
+/* ------- RIGHT COLUMN FOOTER ------- */
 .left_room_btn {
     background-color: #e02828;
     padding-left: 1.65rem;
     padding-right: 1.65rem;
     font-weight: 600;
 }
+@media screen and (max-width: 950px) {
+    .left_room_btn {
+        margin-left: 2rem;
+    }
+}
+/* ------- END RIGHT COLUMN FOOTER ------- */
+
 /* ________ END FOOTER ________ */
